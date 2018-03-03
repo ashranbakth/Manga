@@ -17,7 +17,7 @@ namespace Comic_Book.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Manga Website Description";
 
             return View();
         }
@@ -29,9 +29,15 @@ namespace Comic_Book.Controllers
             return View();
         }
 
+        public IActionResult Detail(){
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }

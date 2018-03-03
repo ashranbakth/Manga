@@ -1,3 +1,79 @@
-﻿@page
+﻿
 @{
+    ViewData["Title"] = "Detail";
+    Layout = "_Layout"; 
+
+    var mangaTitle = "Naruto";
+    var summary = "<p>Twelve years before the start of the series, a powerful " +
+                     "creature known as the Nine-tailed Demon Fox attacked the ninja " +
+                     "village Konohagakure, decimating many people. In response, the leader " +
+                     "of Konohagakure's ninja military - <strong> theFourth Hokage </strong> - sacrificed " +
+                     "his life to seal the demon inside his newly born child Naruto " +
+                     "Uzumaki. Konohagakure, however, regarded Naruto as if he were the demon " +
+                     "fox itself and mistreated him throughout most of his childhood. " +
+                     "The plot tells the story of Naruto Uzumaki, now a adolescent ninja " +
+                     "who constantly searches for recognition and dreams to become the " +
+                     "Hokage, the ninja in his village who is acknowledged as the leader and the strongest of all. </p>";
+
+    var characters = new string[]{
+        "Naruto", 
+        "Sasuke",
+        "Sakura", 
+        "Hinata",
+    };
+
+
+    var seriesTitle = "The Amazing Spider-Man";
+    var issueNumber = 700;
+    var description = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>";
+    var artists = new string[]
+    {
+        "Script: Dan Slott",
+        "Pencils: Humberto Ramos",
+        "Inks: Victor Olazaba",
+        "Colors: Edgar Delgado",
+        "Letters: Chris Eliopoulos"
+    };
 }
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Detail Page</title>
+    </head>
+    <body>
+        <div>
+            <h1>@mangaTitle</h1>
+
+            <h5>Summary</h5>
+            <div>@Html.Raw(summary)</div>
+            @if(characters.Length > 0)
+            {
+                <h5>Characters:</h5>
+                <div>
+                    <ul>
+                    @foreach (var character in characters)
+                    {
+                        <li>@character</li>
+                    }
+                    </ul>
+                </div>
+            }
+            else
+            {
+                <div>There are no characters available!</div>
+            }
+
+        </div>
+
+
+    </body>
+
+
+
+
+
+</html>
