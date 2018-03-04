@@ -10,6 +10,7 @@ namespace Comic_Book.Controllers
 {
     public class HomeController : Controller
     {
+        
         public IActionResult Index()
         {
             return View();
@@ -29,7 +30,8 @@ namespace Comic_Book.Controllers
             return View();
         }
 
-        public IActionResult Detail(){
+        public IActionResult Detail()
+        {
 
             return View();
         }
