@@ -19,7 +19,7 @@ namespace Comic_Book.Models
 
             get
             {
-                return title.ToLower() + ".png";    
+                return title.ToLower() + ".png";   
             }
 
 

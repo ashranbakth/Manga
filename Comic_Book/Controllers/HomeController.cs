@@ -5,11 +5,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Comic_Book.Models;
+using Comic_Book.Data;
 
 namespace Comic_Book.Controllers
 {
     public class HomeController : Controller
     {
+        private Manga_Repository _mangaRepository = null;
+
+        public HomeController()
+        {
+            _mangaRepository = new Manga_Repository();
+        }
         
         public IActionResult Index()
         {
@@ -30,31 +37,14 @@ namespace Comic_Book.Controllers
             return View();
         }
 
-        public IActionResult Detail()
+        public IActionResult Detail(int? id)
         {
-            var manga = new Manga()
+            if(id == null)
             {
-                id = 1,
-                title = "Naruto",
-                summary = "<p>Twelve years before the start of the series, a powerful " +
-                     "creature known as the Nine-tailed Demon Fox attacked the ninja " +
-                     "village Konohagakure, decimating many people. In response, the leader " +
-                     "of Konohagakure's ninja military - <strong> theFourth Hokage </strong> - sacrificed " +
-                     "his life to seal the demon inside his newly born child Naruto " +
-                     "Uzumaki. Konohagakure, however, regarded Naruto as if he were the demon " +
-                     "fox itself and mistreated him throughout most of his childhood. " +
-                     "The plot tells the story of Naruto Uzumaki, now a adolescent ninja " +
-                     "who constantly searches for recognition and dreams to become the " +
-                     "Hokage, the ninja in his village who is acknowledged as the leader and the strongest of all. </p>", 
-                characters = new string[]{
-                    "Naruto",
-                    "Sasuke",
-                    "Sakura",
-                    "Hinata",
-                },
-                favorite = false
-
-            };
+                return NotFound("HTTP Error 404 - Not Found");
+                //used to be return HttpNotFound(); before asp.net core
+            }
+            var manga = _mangaRepository.GetManga((int)id);
 
             return View(manga);
         }
