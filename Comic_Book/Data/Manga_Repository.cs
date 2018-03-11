@@ -61,6 +61,11 @@ namespace Comic_Book.Data
 
         };
 
+        public Manga[] GetMangas()
+        {
+            return _manga;
+        }
+
         public Manga GetManga(int id)
         {
             Manga mangatoreturn = null;

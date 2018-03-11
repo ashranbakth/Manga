@@ -20,7 +20,8 @@ namespace Comic_Book.Controllers
         
         public IActionResult Index()
         {
-            return View();
+            var mangas = _mangaRepository.GetMangas();
+            return View(mangas);
         }
 
         public IActionResult About()

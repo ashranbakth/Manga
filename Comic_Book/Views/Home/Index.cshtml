@@ -1,7 +1,26 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model Comic_Book.Models.Manga[]
+
+@{
+    ViewData["Title"] = "Mangas";
 }
 
+<h2>@ViewData["Title"]</h2>
+
+<div class="row">
+    @foreach (var manga in Model)
+    {
+        <div class="col-md-3">
+            <h4>@manga.title</h4>
+            <img src="/Images/@manga.CoverImageFilename" 
+                alt="@manga.title" 
+                class="img-responsive"/>
+        </div>
+    }
+</div>
+
+
+
+<!--
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -106,3 +125,4 @@
         </ul>
     </div>
 </div>
+-->
