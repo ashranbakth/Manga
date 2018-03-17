@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{950FC721-32A2-4981-A523-24C65F6E94A5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Comic_Book/Views/_ViewStart.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Comic_Book/Program.cs">
     <Files>
       <File FileName="Comic_Book/Views/Home/Detail.cshtml" Line="9" Column="10" />
       <File FileName="Comic_Book/Views/Home/Index.cshtml" Line="19" Column="7" />
@@ -10,6 +10,9 @@
       <File FileName="Comic_Book/Views/_ViewStart.cshtml" Line="2" Column="1" />
       <File FileName="Comic_Book/Models/ErrorViewModel.cs" Line="1" Column="1" />
       <File FileName="Comic_Book/Program.cs" Line="16" Column="10" />
+      <File FileName="Comic_Book/.bowerrc" Line="1" Column="1" />
+      <File FileName="Comic_Book/Startup.cs" Line="1" Column="1" />
+      <File FileName="Comic_Book/bundleconfig.json" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
