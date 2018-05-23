@@ -4,6 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Comic_Book.Models;
+using unirest_net.http;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+
 
 namespace Comic_Book.Data
 {
@@ -60,6 +64,8 @@ namespace Comic_Book.Data
             }
 
         };
+
+       
 
         public Manga[] GetMangas()
         {

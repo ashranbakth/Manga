@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Unirest-API" Version="1.0.7.6" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,5 +15,87 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="unirest-net\packages\FluentAssertions.2.1.0.0\FluentAssertions.2.1.0.0.nupkg" />
+    <None Remove="unirest-net\packages\repositories.config" />
+    <None Remove="unirest-net\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.Tasks.dll" />
+    <None Remove="unirest-net\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets" />
+    <None Remove="unirest-net\packages\Microsoft.Bcl.Build.1.0.10\tools\Uninstall.ps1" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\License-Stable.rtf" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\Microsoft.Net.Http.2.2.15.nupkg" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\Microsoft.Net.Http.2.2.15.nuspec" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\net40\System.Net.Http.Extensions.XML" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\net40\System.Net.Http.Extensions.dll" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\net40\System.Net.Http.Primitives.dll" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\net40\System.Net.Http.Primitives.xml" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\net40\System.Net.Http.WebRequest.dll" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\net40\System.Net.Http.WebRequest.xml" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\net40\System.Net.Http.dll" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\net40\System.Net.Http.xml" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\net40\ensureRedirect.xml" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\portable-net40+sl4+win8+wp71\System.Net.Http.Extensions.XML" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\portable-net40+sl4+win8+wp71\System.Net.Http.Extensions.dll" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\portable-net40+sl4+win8+wp71\System.Net.Http.Primitives.XML" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\portable-net40+sl4+win8+wp71\System.Net.Http.Primitives.dll" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\portable-net40+sl4+win8+wp71\System.Net.Http.dll" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\portable-net40+sl4+win8+wp71\System.Net.Http.xml" />
+    <None Remove="unirest-net\packages\Microsoft.Net.Http.2.2.15\lib\portable-net40+sl4+win8+wp71\ensureRedirect.xml" />
+    <None Remove="unirest-net\packages\Newtonsoft.Json.5.0.8\Newtonsoft.Json.5.0.8.nupkg" />
+    <None Remove="unirest-net\packages\Newtonsoft.Json.5.0.8\Newtonsoft.Json.5.0.8.nuspec" />
+    <None Remove="unirest-net\packages\Newtonsoft.Json.5.0.8\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll" />
+    <None Remove="unirest-net\packages\Newtonsoft.Json.5.0.8\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.xml" />
+    <None Remove="unirest-net\packages\Newtonsoft.Json.5.0.8\tools\install.ps1" />
+    <None Remove="unirest-net\unirest-net %28net40%29\app.config" />
+    <None Remove="unirest-net\unirest-net %28net40%29\packages.config" />
+    <None Remove="unirest-net\unirest-net %28portable%29\app.config" />
+    <None Remove="unirest-net\unirest-net %28portable%29\packages.config" />
+    <None Remove="unirest-net\unirest-net-tests %28net40%29\packages.config" />
+    <None Remove="unirest-net\unirest-net-tests %28win8%29\Package.appxmanifest" />
+    <None Remove="unirest-net\unirest-net-tests %28win8%29\packages.config" />
+    <None Remove="unirest-net\unirest-net-tests %28win8%29\unirest-net-tests %28win8%29_TemporaryKey.pfx" />
+    <None Remove="unirest-net\unirest-net-tests %28win8%29\Images\UnitTestLogo.scale-100.png" />
+    <None Remove="unirest-net\unirest-net-tests %28win8%29\Images\UnitTestSmallLogo.scale-100.png" />
+    <None Remove="unirest-net\unirest-net-tests %28win8%29\Images\UnitTestSplashScreen.scale-100.png" />
+    <None Remove="unirest-net\unirest-net-tests %28win8%29\Images\UnitTestStoreLogo.scale-100.png" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\App.xaml" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\MainPage.xaml" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\packages.config" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\Assets\AlignmentGrid.png" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\Assets\ApplicationIcon.png" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\Assets\Tiles\FlipCycleTileLarge.png" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\Assets\Tiles\FlipCycleTileMedium.png" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\Assets\Tiles\FlipCycleTileSmall.png" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\Properties\AppManifest.xml" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\Properties\WMAppManifest.xml" />
+    <None Remove="unirest-net\unirest-net.sln" />
+    <None Remove="unirest-net\unirest-net %28net40%29\unirest-net %28net40%29.csproj" />
+    <None Remove="unirest-net\unirest-net %28portable%29\unirest-net %28portable%29.csproj" />
+    <None Remove="unirest-net\unirest-net-tests %28net40%29\unirest-net-tests %28net40%29.csproj" />
+    <None Remove="unirest-net\unirest-net-tests %28win8%29\unirest-net-tests %28win8%29.csproj" />
+    <None Remove="unirest-net\unirest-net-tests %28wp8%29\unirest-net-tests %28wp8%29.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="unirest-net\unirest-net-tests %28wp8%29\Resources\AppResources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="unirest-net\unirest-net %28net40%29\Properties\AssemblyInfo.cs" />
+    <Compile Remove="unirest-net\unirest-net %28net40%29\src\http\HttpClientHelper.cs" />
+    <Compile Remove="unirest-net\unirest-net %28net40%29\src\http\HttpResponse.cs" />
+    <Compile Remove="unirest-net\unirest-net %28net40%29\src\http\Unirest.cs" />
+    <Compile Remove="unirest-net\unirest-net %28net40%29\src\request\HttpRequest.cs" />
+    <Compile Remove="unirest-net\unirest-net %28portable%29\Properties\AssemblyInfo.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28net40%29\Properties\AssemblyInfo.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28net40%29\src\http\HttpClientHelperTests.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28net40%29\src\http\HttpResponseTests.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28net40%29\src\http\UnirestTests.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28net40%29\src\request\HttpRequestTests.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28win8%29\Properties\AssemblyInfo.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28wp8%29\App.xaml.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28wp8%29\LocalizedStrings.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28wp8%29\MainPage.xaml.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28wp8%29\Properties\AssemblyInfo.cs" />
+    <Compile Remove="unirest-net\unirest-net-tests %28wp8%29\Resources\AppResources.Designer.cs" />
+    <Compile Remove="Views\Home\Genre.cs" />
   </ItemGroup>
 </Project>

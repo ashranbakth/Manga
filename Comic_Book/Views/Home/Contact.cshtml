@@ -4,12 +4,46 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<address>
-    Manga<br />
-    36628 Chene Drive<br />
-    Sterling Heights, MI 48310<br />
-    <abbr title="Phone">Phone:</abbr>
-    313.703.0012
-</address>
+<style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+</style>
+<div class="row">
+    <div class="col-md-6">
+        <address>
+            Ashran Bakth<br />
+            Sterling Heights, MI 48310<br />
+            <abbr title="Email">Email:</abbr>
+            ashran893@gmail.com
+        </address>
+    </div>
+    <div class="col-md-6">
+        <div id="map">
+            <script>
+              function initMap() {
+                var uluru = {lat: 42.561895, lng: -83.069811};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 10,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAR6f_mNKdm4_vfMEp3CXhpSGLs3WcZEM&callback=initMap">
+            </script>
+
+            
+        </div>
+    </div>
+        
+   
+</div>
+
 
 

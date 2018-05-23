@@ -37,7 +37,10 @@ namespace Comic_Book.Controllers
 
             return View();
         }
-
+        public IActionResult Genre(){
+            
+            return View();
+        }
         public IActionResult Detail(int? id)
         {
             if(id == null)
