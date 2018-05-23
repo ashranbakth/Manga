@@ -3,22 +3,39 @@
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
+<link href="/css/Contact.css" rel="stylesheet" type="text/css" />
 
-<style>
-      #map {
-        width: 100%;
-        height: 400px;
-        background-color: grey;
-      }
-</style>
 <div class="row">
     <div class="col-md-6">
-        <address>
+      <div class="well"
+        <address id="address">
             Ashran Bakth<br />
             Sterling Heights, MI 48310<br />
-            <abbr title="Email">Email:</abbr>
-            ashran893@gmail.com
+            <abbr title="Phone Number">Phone Number:</abbr>
+            (313) 703-0012</br>
+            Email: ashran893@gmail.com
+
         </address>
+      </div>
+        <div class="container">
+          <form action="/action_page.php">
+            
+            <input type="text" id="fname" name="firstname" placeholder="Full Name">
+            </br>
+
+            <input type="text" id="lname" name="lastname" placeholder="Email">
+            </br>
+
+            <textarea id="subject" name="subject" placeholder="Your Message" style="height:200px"></textarea>
+            </br>
+
+
+           
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+
+
     </div>
     <div class="col-md-6">
         <div id="map">
